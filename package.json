@@ -1,0 +1,24 @@
+{
+  "name": "subscription-management-system-saas",
+  "version": "1.0.0",
+  "description": "1. Planos de Assinatura\r    - - [] Cada plano tem um nome, um preço mensal, uma duração (meses) e uma lista de recursos incluídos.\r    - Exemplo: Plano Premium custa R$ 99,90 por 12 meses e inclui suporte 24/7, relatórios avançados e integrações.\r 2. Clientes\r     - - []Cada cliente pode assinar apenas um plano por vez.\r     - - []Deve armazenar informações como nome, email, CPF/CNPJ e status da assinatura.\r     - - []Um cliente pode mudar de plano, mas o sistema deve prorratear o valor.\r 3. Faturas\r     - - []Geradas automaticamente todo mês para clientes ativos.\r     - - []Cada fatura tem um valor, uma data de vencimento e um status (pendente, paga, atrasada).\r     - - []O pagamento deve ser registrado manualmente via API.\r ### Regras de Negócio\r     - - [] O sistema deve garantir que apenas clientes ativos recebam faturas.\r     - - [] Se um cliente cancelar a assinatura, as próximas faturas não devem ser geradas.\r     - - [] Se um cliente mudar de plano, o valor deve ser recalculado proporcionalmente.\r     - - [] O sistema deve permitir listar clientes, faturas e planos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gefersonholdorf/subscription-management-system-saas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gefersonholdorf/subscription-management-system-saas/issues"
+  },
+  "homepage": "https://github.com/gefersonholdorf/subscription-management-system-saas#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}

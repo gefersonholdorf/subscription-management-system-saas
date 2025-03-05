@@ -1,7 +1,7 @@
 import { Entity } from "../../core/entities/entity-base"
 import { UniqueEntityId } from "../../core/entities/unique-entity"
 
-type StatusPayment = 'Pendent' | 'Paid' | 'Late'
+export type StatusPayment = 'Pendent' | 'Paid' | 'Late'
 
 export interface InvoiceProps {
     value: number
